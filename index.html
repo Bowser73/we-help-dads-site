@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ===================== SEO ===================== -->
+  <title>We Help Dads — Helping Dads Get Connected and Stay Connected</title>
+  <meta name="description" content="We Help Dads, an initiative of Dedicated Dads, supports fathers and father figures with connection, family strength, and practical resources. Get Connected. Stay Connected." />
+  <meta name="theme-color" content="#0a0e1a" />
+
+  <!-- Open Graph / social preview. Replace og-image once a real image is provided. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="We Help Dads — Get Connected. Stay Connected." />
+  <meta property="og:description" content="Supporting dads and father figures with connection, family strength, and practical resources." />
+  <meta property="og:image" content="assets/images/og-image.jpg" />
+  <meta property="og:url" content="https://wehelpdads.org/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/logos/we-help-dads-logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Skip link for keyboard / screen-reader users -->
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== NAVIGATION (glassmorphism) ===================== -->
+  <header class="site-header" id="top">
+    <nav class="nav glass" aria-label="Primary">
+      <a class="nav__brand" href="#top" aria-label="We Help Dads home">
+        <!-- Primary public-facing brand logo. Replace SVG in assets/logos/ with official art. -->
+        <img src="assets/logos/we-help-dads-logo.svg" alt="We Help Dads" class="nav__logo" width="200" height="44" />
+      </a>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#who-we-are">Who We Are</a></li>
+        <li><a href="#what-we-do">What We Do</a></li>
+        <li><a href="#why-it-matters">Why It Matters</a></li>
+        <li><a href="#board">Board</a></li>
+        <li><a href="#merch">Merch</a></li>
+        <li><a class="nav__cta" href="#donate">Donate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== 1. HERO ===================== -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <!-- Canvas-driven cinematic sky: stars, shooting stars, fireflies (see script.js). -->
+      <canvas class="hero__sky" id="skyCanvas" aria-hidden="true"></canvas>
+      <div class="hero__aurora" aria-hidden="true"></div>
+      <div class="hero__mountains" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">An initiative of Dedicated Dads</p>
+        <h1 class="hero__title" id="hero-title">Helping Dads Get Connected<br />and Stay Connected.</h1>
+        <!-- CLIENT COPY: refine mission statement once Jeff provides final wording. -->
+        <p class="hero__mission">
+          We walk alongside fathers and father figures — building connection, strengthening
+          families, and pointing dads toward the support and community they need to thrive.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#who-we-are">Explore the Mission</a>
+          <a class="btn btn--ghost" href="#donate">Support the Mission</a>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#who-we-are" aria-label="Scroll to learn more">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-cue" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ===================== 2. WHO WE ARE ===================== -->
+    <section class="section who" id="who-we-are" aria-labelledby="who-title">
+      <div class="container who__grid">
+        <div class="who__text reveal">
+          <p class="section__eyebrow">Who We Are</p>
+          <h2 class="section__title" id="who-title">Strong dads build strong families.</h2>
+          <!-- CLIENT COPY: replace with confirmed organization description. -->
+          <p>
+            <strong>We Help Dads</strong> is the public face of <strong>Dedicated Dads</strong>,
+            an organization built around a simple belief: every dad deserves support, connection,
+            and a community that has his back.
+          </p>
+          <p>
+            We exist for fathers and father figures at every stage — new dads, returning dads,
+            stepdads, grandfathers, and the men who show up for the children in their lives.
+            Through practical support and genuine community relationships, we help dads stay
+            present for their families and connected to the people and resources around them.
+          </p>
+          <p class="who__tag">Get Connected. Stay Connected.</p>
+        </div>
+        <div class="who__panel glass reveal" aria-hidden="false">
+          <ul class="who__list">
+            <li><span>Fathers &amp; father figures</span></li>
+            <li><span>Families &amp; caregivers</span></li>
+            <li><span>Connection &amp; community</span></li>
+            <li><span>Practical, everyday support</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. WHAT WE DO ===================== -->
+    <section class="section what" id="what-we-do" aria-labelledby="what-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">What We Do</p>
+          <h2 class="section__title" id="what-title">Three ways we show up for dads.</h2>
+        </div>
+        <div class="cards">
+          <!-- CLIENT COPY: confirm program descriptions. Keep general until services are verified. -->
+          <article class="card glass reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 11a4 4 0 1 0-8 0M4 20a8 8 0 0 1 16 0" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="card__title">Fatherhood Connection</h3>
+            <p>Creating space for dads to connect with one another — because no father should feel like he's doing this alone.</p>
+          </article>
+
+          <article class="card glass reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Family Strength</h3>
+            <p>Encouraging the habits, presence, and relationships that help families grow closer and more resilient.</p>
+          </article>
+
+          <article class="card glass reveal">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5h11l5 5v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Z"/><path d="M9 13h6M9 17h4" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="card__title">Resources &amp; Referrals</h3>
+            <p>Helping dads find their way to the right people, programs, and community resources when they need a hand.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. WHY IT MATTERS ===================== -->
+    <section class="section why" id="why-it-matters" aria-labelledby="why-title">
+      <div class="why__bg" aria-hidden="true"></div>
+      <div class="container why__inner reveal">
+        <p class="section__eyebrow">Why It Matters</p>
+        <h2 class="section__title" id="why-title">When dads are supported, everyone wins.</h2>
+        <!-- CLIENT COPY: replace with confirmed impact language. Avoid overpromising / unverified stats. -->
+        <p class="why__lead">
+          A supported dad is a more present dad. When fathers feel connected and equipped,
+          their children feel it, their families feel it, and their communities feel it.
+          Strengthening dads is one of the most direct ways to strengthen the people around them.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== 5. BOARD OF DIRECTORS ===================== -->
+    <section class="section board" id="board" aria-labelledby="board-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Leadership</p>
+          <h2 class="section__title" id="board-title">Board of Directors</h2>
+          <p class="section__sub">Names and titles coming soon.</p>
+        </div>
+        <div class="cards cards--4">
+          <!-- CLIENT CONTENT: replace each placeholder with a confirmed board member (photo, name, title). -->
+          <article class="board-card glass reveal">
+            <div class="board-card__avatar" aria-hidden="true"></div>
+            <h3 class="board-card__name">Board Member</h3>
+            <p class="board-card__role">Names and titles coming soon</p>
+          </article>
+          <article class="board-card glass reveal">
+            <div class="board-card__avatar" aria-hidden="true"></div>
+            <h3 class="board-card__name">Board Member</h3>
+            <p class="board-card__role">Names and titles coming soon</p>
+          </article>
+          <article class="board-card glass reveal">
+            <div class="board-card__avatar" aria-hidden="true"></div>
+            <h3 class="board-card__name">Board Member</h3>
+            <p class="board-card__role">Names and titles coming soon</p>
+          </article>
+          <article class="board-card glass reveal">
+            <div class="board-card__avatar" aria-hidden="true"></div>
+            <h3 class="board-card__name">Board Member</h3>
+            <p class="board-card__role">Names and titles coming soon</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. DONATE ===================== -->
+    <section class="section donate" id="donate" aria-labelledby="donate-title">
+      <div class="donate__bg" aria-hidden="true"></div>
+      <div class="container donate__inner glass reveal">
+        <p class="section__eyebrow">Support the Mission</p>
+        <h2 class="section__title" id="donate-title">Help a dad get connected.</h2>
+        <p class="donate__lead">
+          Your gift helps us reach more fathers with connection, encouragement, and practical
+          support. Every dad we reach is a family made a little stronger.
+        </p>
+        <!-- PLACEHOLDER: replace with live donation link/embed once the platform is chosen. -->
+        <button class="btn btn--primary btn--lg" type="button" disabled aria-disabled="true">
+          Donation Link Coming Soon
+        </button>
+        <p class="donate__note">Dedicated Dads is a nonprofit fatherhood organization. <!-- Add tax / EIN note when confirmed. --></p>
+      </div>
+    </section>
+
+    <!-- ===================== 7. MERCH (placeholder only) ===================== -->
+    <section class="section merch" id="merch" aria-labelledby="merch-title">
+      <div class="container merch__inner reveal">
+        <p class="section__eyebrow">Merch</p>
+        <h2 class="section__title" id="merch-title">Wear the mission.</h2>
+        <p class="merch__lead">
+          A We Help Dads merch shop is on the way — apparel and gear that help dads represent
+          the mission and start conversations.
+        </p>
+        <span class="merch__badge">Coming Soon</span>
+        <!-- FUTURE ADD-ON: full merch shop functionality is out of scope for this build. -->
+      </div>
+    </section>
+
+    <!-- ===================== 8. BRAND / LOGO DIRECTION ===================== -->
+    <section class="section brand" id="brand" aria-labelledby="brand-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="section__eyebrow">Our Identity</p>
+          <h2 class="section__title" id="brand-title">One mission, two names.</h2>
+        </div>
+        <div class="brand__grid">
+          <article class="brand-card glass brand-card--primary reveal">
+            <span class="brand-card__tag">Public-facing brand</span>
+            <img src="assets/logos/we-help-dads-logo.svg" alt="We Help Dads logo" class="brand-card__logo" width="240" height="52" />
+            <p>The name people see first — our website, our domain, and how we invite dads in.</p>
+          </article>
+          <article class="brand-card glass reveal">
+            <span class="brand-card__tag">Organization identity</span>
+            <img src="assets/logos/dedicated-dads-logo.svg" alt="Dedicated Dads logo" class="brand-card__logo" width="240" height="52" />
+            <p>The parent organization behind the work — the people and structure that make it real.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" aria-labelledby="footer-title">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="assets/logos/we-help-dads-logo.svg" alt="We Help Dads" class="footer__logo" width="200" height="44" />
+        <p class="footer__tag">Get Connected. Stay Connected.</p>
+      </div>
+      <nav class="footer__nav" aria-labelledby="footer-title">
+        <h2 class="sr-only" id="footer-title">Footer</h2>
+        <a href="#who-we-are">Who We Are</a>
+        <a href="#what-we-do">What We Do</a>
+        <a href="#board">Board</a>
+        <a href="#donate">Donate</a>
+      </nav>
+      <p class="footer__legal">
+        <!-- CLIENT CONTENT: confirm legal name, EIN, and copyright line. -->
+        &copy; <span id="year"></span> Dedicated Dads &middot; We Help Dads. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

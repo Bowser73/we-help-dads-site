@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PLACEHOLDER LOGO — "We Help Dads" (primary public-facing brand)
+  Replace this file with the official "We Help Dads" logo provided by Jeff/Ryan.
+  Keep the filename the same (we-help-dads-logo.svg) or update the references in index.html.
+-->
+<svg width="260" height="56" viewBox="0 0 260 56" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="We Help Dads logo">
+  <defs>
+    <linearGradient id="whdGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7fb2ff"/>
+      <stop offset="1" stop-color="#b388ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Emblem: stylized mountain + star -->
+  <g transform="translate(6,8)">
+    <circle cx="20" cy="20" r="20" fill="url(#whdGrad)" opacity="0.18"/>
+    <path d="M6 30 L16 14 L24 24 L30 16 L36 30 Z" fill="url(#whdGrad)"/>
+    <path d="M28 6 l1.6 3.6 L33 11 l-3 2 .8 3.8 L28 14.6 24.2 16.8 25 13 22 11 l3.4 -1.4 Z" fill="#ffffff"/>
+  </g>
+  <text x="56" y="26" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#ffffff">We Help Dads</text>
+  <text x="56" y="44" font-family="Arial, Helvetica, sans-serif" font-size="10" letter-spacing="2.5" fill="#9fb3d1">GET CONNECTED. STAY CONNECTED.</text>
+</svg>

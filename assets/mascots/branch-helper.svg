@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 420" role="img" aria-labelledby="title description">
+  <title id="title">Branch, the We Help Dads website helper</title>
+  <desc id="description">A friendly wooden branch character with green leaves and a welcoming wave.</desc>
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9a6235"/>
+      <stop offset=".55" stop-color="#74431f"/>
+      <stop offset="1" stop-color="#4d2a15"/>
+    </linearGradient>
+    <linearGradient id="vest" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c7a47"/>
+      <stop offset="1" stop-color="#16452f"/>
+    </linearGradient>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#0b2f20" flood-opacity=".2"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#softShadow)">
+    <path fill="url(#wood)" d="M138 354c4-51 9-105 4-153-4-35-11-63-3-91 7-23 24-39 45-38 22 1 38 18 44 42 7 29-2 59-7 92-7 47-1 98 4 148 2 21-12 35-42 35-31 0-47-13-45-35Z"/>
+    <path fill="url(#wood)" d="M146 190c-25-10-46-28-61-51-8-12-25-4-19 10 12 29 38 53 72 67Z"/>
+    <path fill="url(#wood)" d="M220 184c21-11 38-29 51-51l-5-27c-2-9 11-13 15-5l8 18 9-19c4-8 16-3 13 5l-8 21 17-11c8-5 15 7 8 12l-25 18c-17 31-42 56-76 72Z"/>
+
+    <path fill="url(#vest)" d="M142 232c24 12 57 12 81 0l10 101c-28 16-72 16-101 0Z"/>
+    <path fill="none" stroke="#f7e9c8" stroke-width="5" stroke-linecap="round" d="M182 238v100"/>
+    <circle cx="207" cy="262" r="12" fill="#fbf6e9" stroke="#d9ae55" stroke-width="4"/>
+    <path fill="#2c7a47" d="M203 263c1-7 5-11 11-13 0 7-4 12-11 13Zm0 0c-6-1-10-5-12-11 7 0 11 4 12 11Z"/>
+
+    <ellipse cx="163" cy="141" rx="9" ry="12" fill="#20251f"/>
+    <ellipse cx="204" cy="141" rx="9" ry="12" fill="#20251f"/>
+    <circle cx="160" cy="137" r="3" fill="#fff"/>
+    <circle cx="201" cy="137" r="3" fill="#fff"/>
+    <path fill="none" stroke="#4d2a15" stroke-width="6" stroke-linecap="round" d="M166 166c11 10 25 10 36 0"/>
+    <path fill="none" stroke="#b97942" stroke-width="5" stroke-linecap="round" opacity=".55" d="M155 113c18-13 42-12 57 2M153 302c20 8 42 8 61 0"/>
+
+    <g>
+      <ellipse cx="133" cy="73" rx="18" ry="36" transform="rotate(-42 133 73)" fill="#2c7a47"/>
+      <ellipse cx="173" cy="48" rx="18" ry="37" transform="rotate(-10 173 48)" fill="#3f8f50"/>
+      <ellipse cx="213" cy="55" rx="18" ry="37" transform="rotate(24 213 55)" fill="#236c3e"/>
+      <ellipse cx="240" cy="87" rx="17" ry="34" transform="rotate(48 240 87)" fill="#4a9852"/>
+      <ellipse cx="99" cy="107" rx="15" ry="30" transform="rotate(-62 99 107)" fill="#236c3e"/>
+      <ellipse cx="266" cy="117" rx="15" ry="30" transform="rotate(65 266 117)" fill="#2c7a47"/>
+      <path fill="none" stroke="#16452f" stroke-width="5" stroke-linecap="round" d="M182 99V56m0 34-45-27m47 26 31-35m-59 50-55 2m93-2 69 10"/>
+    </g>
+
+    <path fill="url(#wood)" d="M150 383c-15-3-34 3-45 16-5 6 1 14 9 12 14-4 28-5 42-1 10 3 19-5 16-14-3-8-11-12-22-13Zm69 0c16-3 35 3 46 16 5 6-2 14-9 12-14-4-29-5-43-1-9 3-18-5-15-14 3-8 10-12 21-13Z"/>
+  </g>
+</svg>

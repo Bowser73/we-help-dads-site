@@ -3,3 +3,6 @@
 Thumbs.db
 *.log
 ~$*.docx
+
+# Private local project notes
+private-notes/

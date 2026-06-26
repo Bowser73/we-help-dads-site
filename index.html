@@ -24,12 +24,18 @@
       </a>
       <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu"><span></span><span></span><span></span></button>
       <ul class="nav__menu" id="navMenu">
-        <li><a href="#start-here">Start Here</a></li>
-        <li><a href="#program">Program</a></li>
-        <li><a href="#community">Community</a></li>
-        <li><a href="#founder">Our Story</a></li>
-        <li><a href="#refer">Refer a Dad</a></li>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="nav__item--dropdown">
+          <a href="#program" aria-haspopup="true">Our Programs</a>
+          <ul class="nav__dropdown" aria-label="Our Programs">
+            <li><a href="#influence">Influence</a></li>
+            <li><a href="#prepare">Prepare</a></li>
+            <li><a href="#help">Help</a></li>
+          </ul>
+        </li>
         <li><a class="nav__cta" href="#donate">Donate</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -47,30 +53,31 @@
           <h1 id="hero-title">Helping dads reconnect, grow, and stay involved.</h1>
           <p class="hero__lead">Fathers and father figures deserve encouragement, practical support, and a community that believes showing up matters.</p>
           <div class="button-row">
-            <a class="btn btn--primary" href="#start-here">Start Here</a>
+            <a class="btn btn--primary" href="#mission">Start Here</a>
             <a class="btn btn--secondary" href="tel:+13176787507">Talk to Jeff</a>
           </div>
           <p class="hero__tagline">Get Connected...Stay Connected</p>
         </div>
         <div class="hero__visual">
           <div class="hero__photo-glow" aria-hidden="true"></div>
-          <img src="images/events/56cd5ff2-71f7-4bf7-9d63-330289342d74.jpg" alt="A father and young child walking hand in hand during a community outing" />
+          <!-- TODO Jeff/Nate: Replace this temporary fatherhood/family hero image with Jeff-approved hero photography. -->
+          <img src="images/events/999db90c-2282-4742-a961-5b39b13b17a9.jpg" alt="A family spending time together by the water during a community outing" />
           <div class="hero__logo-card"><img src="assets/logos/official-dedicated-dads-we-help-dads-logo.png" alt="Official Dedicated Dads and We Help Dads logo" /></div>
         </div>
       </div>
     </section>
 
-    <section class="section start" id="start-here" aria-labelledby="start-title">
+    <section class="section start" id="mission" aria-labelledby="mission-title">
       <div class="container">
         <div class="section-heading section-heading--center reveal">
-          <p class="eyebrow">A clear first step</p>
-          <h2 id="start-title">Start Here</h2>
+          <p class="eyebrow">Mission</p>
+          <h2 id="mission-title">Helping dads get connected and stay connected.</h2>
           <p>Are you a dad trying to reconnect, grow, or find support? We Help Dads exists to help fathers and father figures get connected and stay connected.</p>
         </div>
         <div class="action-cards">
-          <a class="action-card reveal" href="#program"><span>01</span><h3>Join a Class</h3><p>Learn about the Dedicated Dads program and the next class cohort.</p><b>Explore the program →</b></a>
-          <a class="action-card reveal" href="tel:+13176787507"><span>02</span><h3>Talk to Jeff</h3><p>Ask a question and talk through the best next step for you or a dad you know.</p><b>Call 317-678-7507 →</b></a>
-          <a class="action-card reveal" href="mailto:Jeffreyhutter1@gmail.com?subject=Get%20Connected%20with%20We%20Help%20Dads"><span>03</span><h3>Get Connected</h3><p>Reach out for encouragement, community connections, and program information.</p><b>Send an email →</b></a>
+          <a class="action-card reveal" href="#influence"><span>01</span><h3>Influence</h3><p>Encourage dads to understand the lasting impact of showing up with love, consistency, and purpose.</p><b>Explore Influence &rarr;</b></a>
+          <a class="action-card reveal" href="#prepare"><span>02</span><h3>Prepare</h3><p>Offer practical tools for communication, healthy relationships, personal growth, and presence.</p><b>Explore Prepare &rarr;</b></a>
+          <a class="action-card reveal" href="#help"><span>03</span><h3>Help</h3><p>Connect dads with encouragement, community, referrals, and practical next steps.</p><b>Explore Help &rarr;</b></a>
         </div>
       </div>
     </section>
@@ -94,12 +101,13 @@
     <section class="section program" id="program" aria-labelledby="program-title">
       <div class="container">
         <div class="program__intro reveal">
-          <div><p class="eyebrow">Fatherhood classes and connection</p><h2 id="program-title">The Dedicated Dads Program</h2></div>
+          <div><p class="eyebrow">Our Programs</p><h2 id="program-title">Influence. Prepare. Help.</h2></div>
           <p>Dedicated Dads gives fathers and father figures a place to build skills, strengthen relationships, and move forward with support.</p>
         </div>
         <div class="program__grid">
-          <article class="info-card reveal"><span>Who it is for</span><h3>Dads at every stage</h3><p>New dads, returning dads, stepdads, grandfathers, and father figures who want to grow and stay connected.</p></article>
-          <article class="info-card reveal"><span>What dads work on</span><h3>Skills that support presence</h3><p>Communication, healthy relationships, personal growth, navigating obstacles, and finding reliable community resources.</p></article>
+          <article class="info-card reveal" id="influence"><span>Influence</span><h3>Dads have lasting impact.</h3><p>Dedicated Dads helps fathers and father figures recognize the influence they carry in their families and communities.</p></article>
+          <article class="info-card reveal" id="prepare"><span>Prepare</span><h3>Practical tools for fatherhood.</h3><p>Dads work on communication, healthy relationships, personal growth, navigating obstacles, and staying present.</p></article>
+          <article class="info-card reveal" id="help"><span>Help</span><h3>Connection and support.</h3><p>We Help Dads connects fathers with encouragement, class information, referrals, and community resources.</p></article>
           <article class="class-callout reveal">
             <p class="eyebrow">Upcoming class</p><h3>A new class cohort is planned for early July.</h3>
             <p>Contact Jeff for current dates, availability, location, and referral information.</p>
@@ -124,12 +132,12 @@
       </div>
     </section>
 
-    <section class="section founder" id="founder" aria-labelledby="founder-title">
+    <section class="section founder" id="about" aria-labelledby="about-title">
       <div class="container founder__grid">
         <div class="founder__story reveal">
-          <p class="eyebrow">Founder Story</p><h2 id="founder-title">Why Jeff Started We Help Dads</h2>
-          <p class="lead">After years of mentoring kids and seeing how deeply father-child disconnection affects families, Jeff Hutter started We Help Dads to help fathers reconnect, grow, and stay involved.</p>
-          <p>The mission is simple: help dads get connected and stay connected.</p>
+          <p class="eyebrow">About</p><h2 id="about-title">About We Help Dads</h2>
+          <p class="lead">Jeff is preparing the final About content for this section.</p>
+          <p>For now, this page keeps the focus on the mission: helping dads get connected and stay connected through Dedicated Dads, a program of We Help Dads.</p>
           <a class="btn btn--primary" href="mailto:Jeffreyhutter1@gmail.com?subject=Connect%20with%20Jeff">Connect with Jeff</a>
           <p><a href="https://www.facebook.com/WeHelpDads/" target="_blank" rel="noopener noreferrer">Follow We Help Dads on Facebook</a></p>
         </div>
@@ -157,6 +165,18 @@
           <article class="giving-card reveal"><strong>$100</strong><span>helps sponsor program supplies</span></article>
         </div>
         <p class="donate__note reveal">Online giving details will be shared here once finalized.</p>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container section-heading section-heading--center reveal">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-title">Talk to Jeff.</h2>
+        <p>For questions about Dedicated Dads, referrals, partnership, donation details, or the next class, contact Jeff / We Help Dads.</p>
+        <div class="button-row button-row--center">
+          <a class="btn btn--primary" href="tel:+13176787507">Call 317-678-7507</a>
+          <a class="btn btn--secondary" href="mailto:Jeffreyhutter1@gmail.com">Email Jeff</a>
+        </div>
       </div>
     </section>
 
@@ -191,7 +211,7 @@
       </div>
       <div class="branch-helper__answer" id="branchAnswer" aria-live="polite">
         <p>Select an option and I’ll show you where to go.</p>
-        <a id="branchAction" href="#start-here" hidden>Go there</a>
+        <a id="branchAction" href="#mission" hidden>Go there</a>
       </div>
       <p class="branch-helper__note">Branch offers preset website guidance only. This demo is not an AI chat service.</p>
     </section>
@@ -204,7 +224,7 @@
   <footer class="footer">
     <div class="container footer__grid">
       <div class="footer__brand"><img src="assets/logos/official-dedicated-dads-we-help-dads-logo.png" alt="Dedicated Dads, a program of We Help Dads" /><p>Get Connected...Stay Connected</p></div>
-      <nav class="footer__nav" aria-label="Footer navigation"><a href="#start-here">Start Here</a><a href="#program">Program</a><a href="#community">Community</a><a href="#refer">Refer a Dad</a><a href="#donate">Donate</a></nav>
+      <nav class="footer__nav" aria-label="Footer navigation"><a href="#top">Home</a><a href="#about">About</a><a href="#program">Our Programs</a><a href="#donate">Donate</a><a href="#contact">Contact</a></nav>
       <div class="footer__contact"><a href="tel:+13176787507">317-678-7507</a><a href="mailto:Jeffreyhutter1@gmail.com">Jeffreyhutter1@gmail.com</a><a href="https://www.facebook.com/WeHelpDads/" target="_blank" rel="noopener noreferrer">Facebook</a></div>
       <p class="footer__legal">&copy; <span id="year"></span> Dedicated Dads · We Help Dads. All rights reserved.</p>
       <p class="footer__credit">Website support by <a href="https://nocapsai.com" target="_blank" rel="noopener noreferrer">NoCapsAI</a></p>

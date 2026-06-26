@@ -171,8 +171,8 @@
 
   var topics = {
     "class": {
-      message: "The Dedicated Dads program section explains who classes are for and how to ask about the next cohort.",
-      label: "View the program",
+      message: "The Our Programs section introduces Influence, Prepare, Help, and how to ask about the next cohort.",
+      label: "View Our Programs",
       href: "#program"
     },
     "contact": {

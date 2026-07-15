@@ -21,6 +21,64 @@
     });
   }
 
+  // Handle dropdown buttons for About and Our Programs
+  var dropdownBtns = document.querySelectorAll(".nav__dropdown-btn");
+  dropdownBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      var isExpanded = btn.getAttribute("aria-expanded") === "true";
+      dropdownBtns.forEach(function (otherBtn) {
+        if (otherBtn !== btn) {
+          otherBtn.setAttribute("aria-expanded", "false");
+        }
+      });
+      btn.setAttribute("aria-expanded", String(!isExpanded));
+    });
+
+    btn.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        btn.setAttribute("aria-expanded", "false");
+        btn.focus();
+      } else if (e.key === "ArrowDown") {
+        e.preventDefault();
+        var menu = btn.nextElementSibling;
+        if (menu && menu.classList.contains("nav__dropdown")) {
+          var firstLink = menu.querySelector("a");
+          if (firstLink) firstLink.focus();
+        }
+      }
+    });
+  });
+
+  // Handle Escape key in dropdown menus
+  var dropdowns = document.querySelectorAll(".nav__dropdown");
+  dropdowns.forEach(function (dropdown) {
+    var links = dropdown.querySelectorAll("a");
+    links.forEach(function (link) {
+      link.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          var btn = link.closest(".nav__item--dropdown").querySelector(".nav__dropdown-btn");
+          if (btn) {
+            btn.setAttribute("aria-expanded", "false");
+            btn.focus();
+          }
+        }
+      });
+    });
+  });
+
+  // Highlight current page
+  var currentPage = window.location.pathname.split("/").pop() || "index.html";
+  var navLinks = document.querySelectorAll(".nav__menu a");
+  navLinks.forEach(function (link) {
+    var href = link.getAttribute("href");
+    if (href === currentPage || (currentPage === "" && href === "index.html")) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+
   var revealEls = document.querySelectorAll(".reveal");
   var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (prefersReduced || !("IntersectionObserver" in window)) {

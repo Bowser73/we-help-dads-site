@@ -24,18 +24,27 @@
       </a>
       <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu"><span></span><span></span><span></span></button>
       <ul class="nav__menu" id="navMenu">
-        <li><a href="#top">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li class="nav__item--dropdown">
-          <a href="#program-pillars" aria-haspopup="true">Our Programs</a>
-          <ul class="nav__dropdown" aria-label="Our Programs">
-            <li><a href="#influence">Influence</a></li>
-            <li><a href="#prepare">Prepare</a></li>
-            <li><a href="#help">Help</a></li>
+          <button class="nav__dropdown-btn" aria-expanded="false" aria-haspopup="true" id="aboutBtn">About</button>
+          <ul class="nav__dropdown" aria-label="About" id="aboutMenu">
+            <li><a href="about.html">Overview</a></li>
+            <li><a href="our-history.html">Our History</a></li>
+            <li><a href="who-we-are.html">Who We Are</a></li>
+            <li><a href="partner-programs.html">Partner Programs</a></li>
           </ul>
         </li>
-        <li><a class="nav__cta" href="#donate">Donate</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li class="nav__item--dropdown">
+          <button class="nav__dropdown-btn" aria-expanded="false" aria-haspopup="true" id="programsBtn">Our Programs</button>
+          <ul class="nav__dropdown" aria-label="Our Programs" id="programsMenu">
+            <li><a href="programs.html">Overview</a></li>
+            <li><a href="influence.html">Influence</a></li>
+            <li><a href="prepare.html">Prepare</a></li>
+            <li><a href="help.html">Help</a></li>
+          </ul>
+        </li>
+        <li><a class="nav__cta" href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -113,19 +122,29 @@
       </div>
     </section>
 
-    <section class="section founder" id="about" aria-labelledby="about-title">
-      <div class="container founder__grid">
-        <div class="founder__story reveal">
-          <p class="eyebrow">About</p><h2 id="about-title">About We Help Dads</h2>
-          <!-- TODO: Replace this temporary About copy with Jeff-approved final About content. -->
-          <p class="lead">We Help Dads exists to help fathers get connected, stay connected, and grow into a steady presence in their children's lives. Dedicated Dads is a program focused on influence, preparation, and practical support for dads who are ready to take their next step.</p>
-          <a class="btn btn--primary" href="mailto:Jeffreyhutter1@gmail.com?subject=Connect%20with%20Jeff">Connect with Jeff</a>
-          <p><a href="https://www.facebook.com/WeHelpDads/" target="_blank" rel="noopener noreferrer">Follow We Help Dads on Facebook</a></p>
+    <section class="section start" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow">Learn More</p>
+          <h2 id="about-title">About We Help Dads</h2>
+          <p class="lead">We Help Dads exists to help fathers get connected, stay connected, and grow into a steady presence in their children's lives.</p>
         </div>
-        <div class="founder__quote reveal">
-          <img src="assets/logos/official-dedicated-dads-we-help-dads-logo.png" alt="Official Dedicated Dads and We Help Dads logo" />
-          <h3>Get connected. Stay connected.</h3>
-          <p>A simple invitation for dads to take the next step with encouragement and community around them.</p>
+        <div class="action-cards" style="margin-top: 2rem;">
+          <article class="action-card reveal">
+            <h3>Our History</h3>
+            <p>Discover how We Help Dads began with Big Brother volunteering in 1975 and grew into a comprehensive program.</p>
+            <a class="btn btn--secondary" href="our-history.html" style="margin-top: auto;">Read Our Story →</a>
+          </article>
+          <article class="action-card reveal">
+            <h3>Who We Are</h3>
+            <p>Meet the Board of Directors and Program Advisors who lead the mission to help fathers reconnect and grow.</p>
+            <a class="btn btn--secondary" href="who-we-are.html" style="margin-top: auto;">Meet the Team →</a>
+          </article>
+          <article class="action-card reveal">
+            <h3>Our Partners</h3>
+            <p>Learn about the community partnerships and organizations working with us to help more fathers.</p>
+            <a class="btn btn--secondary" href="partner-programs.html" style="margin-top: auto;">See Our Partners →</a>
+          </article>
         </div>
       </div>
     </section>
@@ -141,26 +160,26 @@
       <div class="container">
         <div class="donate-placeholder reveal">
           <p class="eyebrow">Support the Mission</p>
-          <h2 id="donate-title">Donation Options Coming Soon</h2>
-          <p>We Help Dads is finalizing online giving options. These preview options show how future support levels may help fatherhood classes, outreach, program materials, and community connection.</p>
+          <h2 id="donate-title">Help Us Reach More Fathers</h2>
+          <p>We Help Dads is finalizing online giving options. Preview options show how future support levels may help fatherhood classes, outreach, program materials, and community connection.</p>
           <div class="giving-grid">
             <article class="giving-card">
               <strong>$25</strong>
               <span>helps provide class materials</span>
-              <a class="btn btn--secondary" href="#contact">Preview Support Option</a>
+              <a class="btn btn--secondary" href="donate.html">Learn More</a>
             </article>
             <article class="giving-card">
               <strong>$50</strong>
               <span>supports outreach to fathers</span>
-              <a class="btn btn--secondary" href="#contact">Preview Support Option</a>
+              <a class="btn btn--secondary" href="donate.html">Learn More</a>
             </article>
             <article class="giving-card">
               <strong>$100</strong>
               <span>helps sponsor program supplies</span>
-              <a class="btn btn--secondary" href="#contact">Preview Support Option</a>
+              <a class="btn btn--secondary" href="donate.html">Learn More</a>
             </article>
           </div>
-          <p class="donate__note">Online giving details will be shared here once finalized.</p>
+          <p class="donate__note"><a href="donate.html">Visit our Donate page</a> to learn more about supporting We Help Dads.</p>
         </div>
       </div>
     </section>
@@ -168,21 +187,13 @@
     <section class="section contact" id="contact" aria-labelledby="contact-title">
       <div class="container section-heading section-heading--center reveal">
         <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Talk to Jeff.</h2>
+        <h2 id="contact-title">Talk to Jeff</h2>
         <p>For questions about Dedicated Dads, referrals, partnership, donation details, or the next class, contact Jeff / We Help Dads.</p>
         <div class="button-row button-row--center">
-          <a class="btn btn--primary" href="tel:+13176787507">Call 317-678-7507</a>
-          <a class="btn btn--secondary" href="mailto:Jeffreyhutter1@gmail.com">Email Jeff</a>
+          <a class="btn btn--primary" href="contact.html">Get in Touch</a>
+          <a class="btn btn--secondary" href="tel:+13176787507">Call 317-678-7507</a>
         </div>
       </div>
-    </section>
-
-    <section class="section board" id="board" aria-labelledby="board-title">
-      <div class="container board__inner reveal">
-        <div><p class="eyebrow">Leadership</p><h2 id="board-title">Board of Directors</h2></div>
-        <div><p class="lead">Board of Directors information will be added as leadership roles are finalized.</p><p>Interested in supporting the mission as an advisor, partner, or board member? Contact us.</p><a href="mailto:Jeffreyhutter1@gmail.com?subject=Leadership%20Interest">Contact us →</a></div>
-      </div>
-    </section>
   </main>
 
   <!-- TODO: Do not add mascot/assistant widget unless Jeff explicitly approves it. -->
@@ -190,7 +201,7 @@
   <footer class="footer">
     <div class="container footer__grid">
       <div class="footer__brand"><img src="assets/logos/official-dedicated-dads-we-help-dads-logo.png" alt="Dedicated Dads, a program of We Help Dads" /><p>Get Connected...Stay Connected</p></div>
-      <nav class="footer__nav" aria-label="Footer navigation"><a href="#top">Home</a><a href="#about">About</a><a href="#program-pillars">Our Programs</a><a href="#donate">Donate</a><a href="#contact">Contact</a></nav>
+      <nav class="footer__nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Our Programs</a><a href="donate.html">Donate</a><a href="contact.html">Contact</a></nav>
       <div class="footer__contact"><a href="tel:+13176787507">317-678-7507</a><a href="mailto:Jeffreyhutter1@gmail.com">Jeffreyhutter1@gmail.com</a><a href="https://www.facebook.com/WeHelpDads/" target="_blank" rel="noopener noreferrer">Facebook</a></div>
       <p class="footer__legal">&copy; <span id="year"></span> Dedicated Dads · We Help Dads. All rights reserved.</p>
       <p class="footer__credit">Website support by <a href="https://nocapsai.com" target="_blank" rel="noopener noreferrer">NoCapsAI</a></p>

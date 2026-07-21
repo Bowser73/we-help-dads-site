@@ -17,14 +17,20 @@
 </head>
 <body id="top">
   <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
       <a class="nav__brand" href="index.html" aria-label="We Help Dads home">
         <img src="assets/logos/official-dedicated-dads-we-help-dads-logo.png" alt="Dedicated Dads, a program of We Help Dads — Get Connected, Stay Connected" class="nav__logo" />
       </a>
-      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu"><span></span><span></span><span></span></button>
+
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
       <ul class="nav__menu" id="navMenu">
         <li><a href="index.html">Home</a></li>
+
         <li class="nav__item--dropdown">
           <a href="about.html" aria-haspopup="true" aria-current="page">About</a>
           <ul class="nav__dropdown" aria-label="About">
@@ -34,6 +40,7 @@
             <li><a href="about.html#partners">Partner Programs</a></li>
           </ul>
         </li>
+
         <li class="nav__item--dropdown">
           <a href="programs.html" aria-haspopup="true">Our Programs</a>
           <ul class="nav__dropdown" aria-label="Our Programs">
@@ -44,6 +51,7 @@
             <li><a href="programs.html#dedicated-dads-20">Dedicated Dads 2.0</a></li>
           </ul>
         </li>
+
         <li><a class="nav__cta" href="donate.html">Donate</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -51,35 +59,79 @@
   </header>
 
   <main id="main">
+    <section class="page-banner page-banner--about" aria-labelledby="about-page-title">
+      <div class="container page-banner__grid">
+        <div class="page-banner__copy reveal">
+          <p class="eyebrow">Dedicated Dads &middot; We Help Dads</p>
+          <div class="hero-accent" aria-hidden="true"></div>
+          <h1 id="about-page-title">About We Help Dads</h1>
+          <p class="page-banner__lead">The story, leadership, and partnerships behind the mission to reconnect dads with their children.</p>
+        </div>
 
-    <section class="page-banner" aria-labelledby="about-page-title">
-      <div class="container">
-        <p class="eyebrow">Dedicated Dads &middot; We Help Dads</p>
-        <h1 id="about-page-title">About We Help Dads</h1>
-        <p class="page-banner__lead">The story, leadership, and partnerships behind the mission to reconnect dads with their children.</p>
+        <aside class="about-summary reveal" aria-label="About We Help Dads summary">
+          <p class="about-summary__kicker">At a glance</p>
+          <dl class="about-summary__facts">
+            <div>
+              <dt>Founded</dt>
+              <dd>2019</dd>
+            </div>
+            <div>
+              <dt>Organization</dt>
+              <dd>Dedicated Dads / We Help Dads</dd>
+            </div>
+            <div>
+              <dt>Work</dt>
+              <dd>Class training, mentoring, and partner courts</dd>
+            </div>
+          </dl>
+          <p class="about-summary__pillars">Influence <span aria-hidden="true">&bull;</span> Prepare <span aria-hidden="true">&bull;</span> Help</p>
+        </aside>
       </div>
     </section>
 
     <section class="section" id="history" aria-labelledby="history-title">
       <div class="container">
-        <div class="split split--start">
-          <div class="reveal">
+        <div class="history-layout">
+          <div class="history-story reveal">
             <p class="eyebrow">Our History</p>
             <h2 id="history-title">Where it started.</h2>
+
             <p class="lead">In 2019, Jeff Hutter set out to answer a question: instead of filling the father role himself, what if he helped estranged dads get back into their kids&rsquo; lives?</p>
+
             <p>Our founder began volunteering as a big brother in the Kansas City Big Brother Big Sister program in 1975, shortly after graduating from the University of Kansas. He continued mentoring after moving to Louisville and broadened his work through the Boys &amp; Girls Clubs of Louisville.</p>
+
             <p>Jeff was connected to the then-Assistant Prosecuting Attorney in Madison County, Steve Koester&mdash;now Judge of the Family Court. &ldquo;Judge Koester walked me down the hall to Judge Angela Sims and staff director Katie Stapleton of Problem Solving Court, and from there our fatherhood program began.&rdquo;</p>
+
             <p>Since then, We Help Dads has provided class training to more than 200 fathers from the court system in Madison County, provides fatherhood instruction in the Hamilton County Jail through the TOWER Program, and conducts classes at the Madison County Corrections Complex.</p>
+
             <p>Beginning in 2024, volunteer graduate dads began mentoring others who have turned their lives around but need help overcoming obstacles to full involvement with their children.</p>
           </div>
+
           <aside class="history__aside reveal">
+            <figure class="history-photo">
+              <img src="assets/images/about/jeff-big-brother-1976.jpg" alt="Jeff Hutter as a Big Brother to Chris in Kansas City in 1976" />
+              <figcaption>
+                In 1976, Mr. Hutter was a Big Brother to Chris in Kansas City, and was featured on the cover of the program for the Big Brother Big Sister High School All Star football game. It was the start of Mr. Hutter's work with boys without an active dad in their lives.
+              </figcaption>
+            </figure>
+
             <blockquote class="history__quote">
               <p>&ldquo;It hit me, what if I worked to get estranged dads back into their kids&rsquo; lives as opposed to trying to fill the father role myself.&rdquo;</p>
               <cite>&mdash; Jeff Hutter, Founder</cite>
             </blockquote>
-            <div class="history__stat">
-              <strong>200+</strong>
-              <span>dads served through class training in Madison County alone</span>
+
+            <div class="history__side-grid">
+              <div class="history__stat">
+                <strong>200+</strong>
+                <span>dads served through class training in Madison County alone</span>
+              </div>
+
+              <ol class="history-timeline" aria-label="We Help Dads milestones">
+                <li><time>1975-1976</time><span>Jeff begins mentoring through Big Brother / Big Sister in Kansas City.</span></li>
+                <li><time>2019</time><span>We Help Dads is founded to reconnect dads with their children.</span></li>
+                <li><time>Since then</time><span>Classes expand through Madison County, Hamilton County / TOWER, and corrections partners.</span></li>
+                <li><time>2024</time><span>Graduate dads begin mentoring other fathers.</span></li>
+              </ol>
             </div>
           </aside>
         </div>
@@ -92,8 +144,10 @@
           <p class="eyebrow">Leadership</p>
           <h2 id="who-we-are-title">Who We Are</h2>
         </div>
+
         <div id="board">
           <p class="eyebrow" style="margin-bottom:1.5rem">Board of Directors</p>
+
           <article class="board-card board-card--founder reveal">
             <img class="board-card__photo" src="assets/images/board/jeff-hutter.jpg" alt="Jeffrey Hutter, Founder and President of We Help Dads" />
             <div class="board-card__info">
@@ -102,43 +156,53 @@
               <p class="board-card__bio">Jeff retired from a career in dental and health care management in 2019 to found We Help Dads. He was active in programs to mentor boys without fathers in Louisville and Kansas City before creating a program to reconnect estranged dads with their children. He began his career as a broadcast journalist after graduating from the University of Kansas William Allen White School of Journalism. He has a son and several stepchildren and grandchildren in Indiana, Kentucky, and Texas, and an informally adopted son in Kentucky.</p>
             </div>
           </article>
-          <article class="board-card board-card--photo reveal">
-            <img class="board-card__photo" src="assets/images/board/randy-jaros.jpg" alt="Randy Jaros, Treasurer" />
-            <div class="board-card__info">
-              <h3 class="board-card__name">Randy Jaros</h3>
-              <p class="board-card__role">Treasurer</p>
-            </div>
-          </article>
-          <article class="board-card board-card--founder reveal">
-            <img class="board-card__photo" src="assets/images/board/ryno-farley.png" alt="Ryan Farley, Secretary" />
-            <div class="board-card__info">
-              <h3 class="board-card__name">Ryan Farley</h3>
-              <p class="board-card__role">Secretary</p>
-              <p class="board-card__bio">Ryan is a dedicated addiction recovery professional with over 6 years of experience in mental health and substance use treatment. He has a strong background in program development, mentorship, and community outreach, with a passion for breaking the stigma surrounding addiction and promoting recovery. As a full-time father of two, Ryan leads with purpose, balancing his professional work with his most important role&mdash;being present for his children every day. He is committed to helping individuals and families find hope, build resilience, and create lasting change through support, education, and second chances.</p>
-            </div>
-          </article>
-          <article class="board-card board-card--photo reveal">
-            <div class="board-card__initials" aria-hidden="true">TJ</div>
-            <div class="board-card__info">
-              <h3 class="board-card__name">Tressena Jones</h3>
-              <p class="board-card__role">Board Member</p>
-            </div>
-          </article>
-          <article class="board-card board-card--photo reveal">
-            <div class="board-card__initials" aria-hidden="true">MC</div>
-            <div class="board-card__info">
-              <h3 class="board-card__name">Mike Cox</h3>
-              <p class="board-card__role">Board Member</p>
-            </div>
-          </article>
+
+          <div class="board__member-grid">
+            <article class="board-card board-card--photo reveal">
+              <img class="board-card__photo" src="assets/images/board/randy-jaros.jpg" alt="Randy Jaros, Treasurer" />
+              <div class="board-card__info">
+                <h3 class="board-card__name">Randy Jaros</h3>
+                <p class="board-card__role">Treasurer</p>
+              </div>
+            </article>
+
+            <article class="board-card board-card--photo board-card--bio reveal">
+              <img class="board-card__photo" src="assets/images/board/ryno-farley.png" alt="Ryan Farley, Secretary" />
+              <div class="board-card__info">
+                <h3 class="board-card__name">Ryan Farley</h3>
+                <p class="board-card__role">Secretary</p>
+                <p class="board-card__bio">Ryan is a dedicated addiction recovery professional with over 6 years of experience in mental health and substance use treatment. He has a strong background in program development, mentorship, and community outreach, with a passion for breaking the stigma surrounding addiction and promoting recovery. As a full-time father of two, Ryan leads with purpose, balancing his professional work with his most important role&mdash;being present for his children every day. He is committed to helping individuals and families find hope, build resilience, and create lasting change through support, education, and second chances.</p>
+              </div>
+            </article>
+
+            <article class="board-card board-card--photo reveal">
+              <div class="board-card__initials" aria-hidden="true">TJ</div>
+              <div class="board-card__info">
+                <h3 class="board-card__name">Tressena Jones</h3>
+                <p class="board-card__role">Board Member</p>
+              </div>
+            </article>
+
+            <article class="board-card board-card--photo reveal">
+              <img class="board-card__photo" src="assets/images/board/mike-cox.jpg" alt="Mike Cox, Board Member" />
+              <div class="board-card__info">
+                <h3 class="board-card__name">Mike Cox</h3>
+                <p class="board-card__role">Board Member</p>
+              </div>
+            </article>
+          </div>
         </div>
-        <div class="board__advisors reveal">
-          <p class="eyebrow">Program Advisors</p>
+
+        <section class="advisors-panel reveal" aria-labelledby="advisors-title">
+          <div>
+            <p class="eyebrow">Program Advisors</p>
+            <h3 id="advisors-title">Guidance rooted in psychology, court experience, and fatherhood support.</h3>
+          </div>
           <ul class="board__advisor-list">
-            <li><strong>John Wenger, Ph.D</strong> &mdash; Psychology, Advisor to Madison County, IN, Problem Solving Court</li>
-            <li><strong>Tom Murray, Ph.D</strong> &mdash; Psychology, Initial Program Advisor &amp; Instructor, Anderson University</li>
+            <li><strong>John Wenger, Ph.D</strong><span>Psychology, Advisor to Madison County, IN, Problem Solving Court</span></li>
+            <li><strong>Tom Murray, Ph.D</strong><span>Psychology, Initial Program Advisor &amp; Instructor, Anderson University</span></li>
           </ul>
-        </div>
+        </section>
       </div>
     </section>
 
@@ -149,6 +213,7 @@
           <h2 id="partners-title">Partner Programs</h2>
           <p>We Help Dads has been a fatherhood resource for these court programs across Indiana.</p>
         </div>
+
         <div class="partner-list reveal">
           <ul>
             <li>The Problem Solving Court of Madison County</li>
@@ -157,36 +222,55 @@
             <li>The Madison County Correction Department</li>
             <li>The Madison County Community Justice Department</li>
           </ul>
-          <p>We Help Dads coordinates for Madison County Family Court a grant from the Indiana Supreme Court to provide free legal assistance to parents referred by agencies seeking expanded rights with their children.</p>
+          <div class="partner-list__note">
+            <p>We Help Dads coordinates for Madison County Family Court a grant from the Indiana Supreme Court to provide free legal assistance to parents referred by agencies seeking expanded rights with their children.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <section class="section about-cta" id="contact" aria-labelledby="contact-title">
       <div class="container section-heading section-heading--center reveal">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">Talk to Jeff.</h2>
-        <p>For questions about Dedicated Dads, referrals, partnership, donation details, or the next class, contact Jeff / We Help Dads.</p>
+        <p class="eyebrow">Take the next step</p>
+        <h2 id="contact-title">Want to learn more, partner with us, or support the mission?</h2>
+        <p>Every class, referral, partnership, and gift helps more dads get connected and stay connected with their children.</p>
         <div class="button-row button-row--center">
-          <a class="btn btn--primary" href="tel:+13176787507">Call 317-678-7507</a>
-          <a class="btn btn--secondary" href="mailto:Jeffreyhutter1@gmail.com">Email Jeff</a>
+          <a class="btn btn--primary" href="programs.html">Explore Programs</a>
+          <a class="btn btn--secondary" href="contact.html">Contact Jeff</a>
+          <a class="btn btn--secondary" href="donate.html">Support the Mission</a>
         </div>
       </div>
     </section>
-
   </main>
 
   <!-- TODO: Do not add mascot/assistant widget unless Jeff explicitly approves it. -->
 
   <footer class="footer">
     <div class="container footer__grid">
-      <div class="footer__brand"><img src="assets/logos/official-dedicated-dads-we-help-dads-logo.png" alt="Dedicated Dads, a program of We Help Dads" /><p>Get Connected...Stay Connected</p></div>
-      <nav class="footer__nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Our Programs</a><a href="donate.html">Donate</a><a href="contact.html">Contact</a></nav>
-      <div class="footer__contact"><a href="tel:+13176787507">317-678-7507</a><a href="mailto:Jeffreyhutter1@gmail.com">Jeffreyhutter1@gmail.com</a><a href="https://www.facebook.com/WeHelpDads/" target="_blank" rel="noopener noreferrer">Facebook</a></div>
+      <div class="footer__brand">
+        <img src="assets/logos/official-dedicated-dads-we-help-dads-logo.png" alt="Dedicated Dads, a program of We Help Dads" />
+        <p>Get Connected...Stay Connected</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Our Programs</a>
+        <a href="donate.html">Donate</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="footer__contact">
+        <a href="tel:+13176787507">317-678-7507</a>
+        <a href="mailto:Jeffreyhutter1@gmail.com">Jeffreyhutter1@gmail.com</a>
+        <a href="https://www.facebook.com/WeHelpDads/" target="_blank" rel="noopener noreferrer">Facebook</a>
+      </div>
+
       <p class="footer__legal">&copy; <span id="year"></span> Dedicated Dads &middot; We Help Dads. All rights reserved.</p>
       <p class="footer__credit">Website support by <a href="https://nocapsai.com" target="_blank" rel="noopener noreferrer">NoCapsAI</a></p>
     </div>
   </footer>
+
   <script src="script.js?v=board-v1"></script>
 </body>
 </html>

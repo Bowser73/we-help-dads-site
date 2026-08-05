@@ -207,8 +207,10 @@ h3{font-size:1.45rem} p{margin:0 0 1rem} a{color:inherit;text-decoration:none} i
 .programs-overview__gallery figure{margin:0;overflow:hidden;border-radius:16px;background:var(--cream-deep)}
 .programs-overview__gallery img{width:100%;aspect-ratio:4/3;height:auto;object-fit:cover;object-position:center center;display:block;border-radius:16px;background:var(--cream-deep)}
 .programs__photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
+.programs__photo-pair--single{grid-template-columns:1fr}
 .programs__photo-pair figure{margin:0;overflow:hidden;border-radius:18px;background:var(--cream-deep)}
 .programs__photo-pair img{width:100%;height:185px;object-fit:cover;display:block}
+.programs__photo-pair--single img{height:320px}
 .programs__photo-pair figcaption{padding:.45rem .7rem;font-size:.78rem;color:var(--muted);line-height:1.35}
 
 /* Testimonials */
@@ -219,6 +221,7 @@ h3{font-size:1.45rem} p{margin:0 0 1rem} a{color:inherit;text-decoration:none} i
 .testimonial-card__photo{width:100%;height:220px;object-fit:cover;object-position:center 15%;border-radius:16px;margin-bottom:1.25rem;background:var(--cream-deep)}
 .testimonial-card__photo--contain{object-fit:contain;object-position:center center;height:200px}
 .testimonial-card__photo--rick{object-fit:cover;object-position:center top}
+.testimonial-card__photo--joe{height:260px;object-fit:contain;object-position:center center}
 .testimonial-card blockquote{margin:0;flex:1;display:flex;flex-direction:column;justify-content:center}
 .testimonial-card blockquote p{color:var(--forest-dark);font-family:Georgia,serif;font-size:1.02rem;font-style:italic;line-height:1.7;margin:0 0 1rem}
 .testimonial-card blockquote cite{color:var(--brown);font-size:.8rem;font-weight:800;font-style:normal;letter-spacing:.08em;text-transform:uppercase}
@@ -530,4 +533,36 @@ h3{font-size:1.45rem} p{margin:0 0 1rem} a{color:inherit;text-decoration:none} i
   object-fit: contain;
   object-position: center top;
   background: #eadfc3;
+}
+
+.testimonial-card__image-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .85rem;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-card__image-pair .testimonial-card__image {
+  width: 100%;
+  height: 240px;
+  margin: 0;
+  border-radius: 18px;
+  object-fit: contain;
+  object-position: center center;
+  background: #eadfc3;
+}
+
+.testimonial-card__image--rick-kangaroo {
+  object-fit: cover;
+  object-position: center center;
+}
+
+@media (max-width: 800px) {
+  .testimonial-card__image-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card__image-pair .testimonial-card__image {
+    height: 260px;
+  }
 }

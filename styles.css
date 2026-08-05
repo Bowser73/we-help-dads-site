@@ -219,9 +219,9 @@ h3{font-size:1.45rem} p{margin:0 0 1rem} a{color:inherit;text-decoration:none} i
 .testimonial-card{display:flex;flex-direction:column;padding:2rem;background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 8px 24px rgba(32,37,31,.05);transition:.25s var(--ease)}
 .testimonial-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
 .testimonial-card__photo{width:100%;height:220px;object-fit:cover;object-position:center 15%;border-radius:16px;margin-bottom:1.25rem;background:var(--cream-deep)}
-.testimonial-card__photo--contain{object-fit:contain;object-position:center center;height:200px}
+.testimonial-card__photo--contain{object-fit:cover;object-position:center center;height:220px}
 .testimonial-card__photo--rick{object-fit:cover;object-position:center top}
-.testimonial-card__photo--joe{height:260px;object-fit:contain;object-position:center center}
+.testimonial-card__photo--joe{height:260px;object-fit:cover;object-position:center center}
 .testimonial-card blockquote{margin:0;flex:1;display:flex;flex-direction:column;justify-content:center}
 .testimonial-card blockquote p{color:var(--forest-dark);font-family:Georgia,serif;font-size:1.02rem;font-style:italic;line-height:1.7;margin:0 0 1rem}
 .testimonial-card blockquote cite{color:var(--brown);font-size:.8rem;font-weight:800;font-style:normal;letter-spacing:.08em;text-transform:uppercase}
@@ -535,11 +535,49 @@ h3{font-size:1.45rem} p{margin:0 0 1rem} a{color:inherit;text-decoration:none} i
   background: #eadfc3;
 }
 
-.testimonial-card__image-pair {
+.testimonial-card__image-pair,
+.testimonial-card__media-pair {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: .85rem;
   margin-bottom: 1.5rem;
+}
+
+.testimonial-card__media {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 18px;
+  margin-bottom: 1.5rem;
+  background: var(--cream-deep);
+}
+
+.testimonial-card__media-pair .testimonial-card__media {
+  margin-bottom: 0;
+}
+
+.testimonial-card__media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.testimonial-card__media--rick-graduation img {
+  object-position: center center;
+}
+
+.testimonial-card__media--rick-kangaroo img {
+  object-position: center 42%;
+}
+
+.testimonial-card__media--ryan img {
+  object-position: center 38%;
+}
+
+.testimonial-card__media--joe img {
+  object-position: center 34%;
 }
 
 .testimonial-card__image-pair .testimonial-card__image {
@@ -547,9 +585,8 @@ h3{font-size:1.45rem} p{margin:0 0 1rem} a{color:inherit;text-decoration:none} i
   height: 240px;
   margin: 0;
   border-radius: 18px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center center;
-  background: #eadfc3;
 }
 
 .testimonial-card__image--rick-kangaroo {
@@ -558,7 +595,8 @@ h3{font-size:1.45rem} p{margin:0 0 1rem} a{color:inherit;text-decoration:none} i
 }
 
 @media (max-width: 800px) {
-  .testimonial-card__image-pair {
+  .testimonial-card__image-pair,
+  .testimonial-card__media-pair {
     grid-template-columns: 1fr;
   }
 

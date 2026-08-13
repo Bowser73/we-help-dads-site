@@ -1,0 +1,66 @@
+/* Jeff 8.8 header logo update: larger paired We Help Dads + Dedicated Dads / We Help Dads marks */
+.site-header .nav {
+  min-height: 118px;
+}
+
+.site-header .nav__brand {
+  gap: 1rem;
+  padding: .5rem 0;
+}
+
+.site-header .nav__logo {
+  width: 126px;
+  height: 102px;
+  object-fit: contain;
+}
+
+.site-header .nav__logo-secondary {
+  width: 142px;
+  height: 106px;
+  object-fit: contain;
+}
+
+@media (max-width: 900px) {
+  .site-header .nav {
+    min-height: 104px;
+  }
+
+  .site-header .nav__logo {
+    width: 104px;
+    height: 88px;
+  }
+
+  .site-header .nav__logo-secondary {
+    width: 116px;
+    height: 90px;
+  }
+
+  .site-header .nav__menu {
+    top: 104px;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header .nav {
+    min-height: 88px;
+    gap: .6rem;
+  }
+
+  .site-header .nav__brand {
+    gap: .45rem;
+  }
+
+  .site-header .nav__logo {
+    width: 82px;
+    height: 70px;
+  }
+
+  .site-header .nav__logo-secondary {
+    width: 92px;
+    height: 72px;
+  }
+
+  .site-header .nav__menu {
+    top: 88px;
+  }
+}

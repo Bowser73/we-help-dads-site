@@ -20,8 +20,8 @@
   <header class="site-header">
     <nav class="nav container" aria-label="Primary navigation">
       <a class="nav__brand" href="#top" aria-label="We Help Dads home">
-        <img src="assets/logos/official-dedicated-dads-we-help-dads-logo.png" alt="We Help Dads — Get Connected, Stay Connected" class="nav__logo" />
-        <img src="assets/logos/dedicated-dads-logo-transparent.png" alt="Dedicated Dads, a program of We Help Dads" class="nav__logo-secondary" />
+        <span class="nav__logo-frame nav__logo-secondary"><img src="assets/logos/we_help_dads_tree_emblem.png" alt="We Help Dads — Get Connected, Stay Connected" class="nav__logo-img" /></span>
+        <span class="nav__logo-frame nav__logo"><img src="assets/logos/official-dedicated-dads-we-help-dads-logo.png" alt="Dedicated Dads" class="nav__logo-img" /></span>
       </a>
       <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Open menu"><span></span><span></span><span></span></button>
       <ul class="nav__menu" id="navMenu">
@@ -58,12 +58,8 @@
           <p class="hero__brand-label">We Help Dads is an Indiana nonprofit organization / 501 (c)(3), operating in central Indiana. Services are provided to fathers under its program Dedicated Dads.</p>
           <div class="hero__gold-bar" aria-hidden="true"></div>
           <p class="hero__mission-eyebrow">Our Mission</p>
-          <h1 id="mission-title" class="hero__headline">Dedicated Dads prepares fathers for real life change.</h1>
-          <p class="hero__statement">&ldquo;We prepare troubled dads to better understand their fatherhood role and then help them through the life changes needed to become constructive and fully involved dads.&rdquo;</p>
-          <div class="button-row hero__actions">
-            <a class="btn btn--primary" href="#program-pillars">See How We Help</a>
-            <a class="btn btn--secondary" href="tel:+13176787507">Talk to Jeff</a>
-          </div>
+          <h1 id="mission-title" class="hero__headline">Dedicated Dads prepares fathers for real life changes, and then helps them achieve those changes.</h1>
+          <p class="hero__statement">Most of the dads we help want to be a father to their kids, they just don&rsquo;t have the tools from their background to know what all that requires of them.</p>
           <p class="hero__tagline">Get Connected&hellip;Stay Connected</p>
         </div>
         <div class="hero__panel">
@@ -85,20 +81,6 @@
             </ul>
             <p class="hero__panel-note">Dedicated Dads &middot; We Help Dads</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section start" id="mission" aria-labelledby="programs-title">
-      <div class="container">
-        <div class="section-heading section-heading--center reveal">
-          <p class="eyebrow">Our Programs</p>
-          <h2 id="programs-title">How We Work</h2>
-        </div>
-        <div class="action-cards" id="program-pillars" aria-label="Our Programs">
-          <article class="action-card reveal" id="influence"><span>01</span><h3>Influence</h3><p>Understanding that no one can change anyone else, our classroom programs provide guidance, information and testimonials to influence the dads to make the life changes needed to be a dad to their kids.</p></article>
-          <article class="action-card reveal" id="prepare"><span>02</span><h3>Prepare</h3><p>Most of the men we help don’t have a basis of fatherhood in their lives—there wasn’t a dad to teach them. So we prepare the men to be a dad to their children through instruction and guest speakers sharing information from national fatherhood programs…and then measure what the men have gained from the classes.</p></article>
-          <article class="action-card reveal" id="help"><span>03</span><h3>Help</h3><p>When the men demonstrate a commitment to fatherhood and are free of any substance abuse, we help them connect and build their role as dads through legal assistance, job placement, social services coordination, and continuing mentoring.</p></article>
         </div>
       </div>
     </section>
@@ -135,6 +117,9 @@
             </blockquote>
           </article>
           <article class="testimonial-card reveal">
+            <div class="testimonial-card__media testimonial-card__media--shaq">
+              <img src="assets/images/testimonials/shaq.png" alt="Shaq" />
+            </div>
             <blockquote>
               <p>&ldquo;I was one of the first students in Dedicated Dads classes, and I&rsquo;ve been connected to the program ever since. The classes helped me focus on the work I needed to do as a dad. Now, I&rsquo;m proud to be an example of good fatherhood and talk to each of the classes to share my story.&rdquo;</p>
               <cite>Shaq &mdash; father of 5</cite>
@@ -149,6 +134,20 @@
               <cite>Joe &mdash; father of two</cite>
             </blockquote>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section start" id="mission" aria-labelledby="programs-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow">Our Programs</p>
+          <h2 id="programs-title">How We Work</h2>
+        </div>
+        <div class="action-cards" id="program-pillars" aria-label="Our Programs">
+          <article class="action-card reveal" id="influence"><span>01</span><h3>Influence</h3><p>Understanding that no one can change anyone else, our classroom programs provide guidance, information and testimonials to influence the dads to make the life changes needed to be a dad to their kids.</p></article>
+          <article class="action-card reveal" id="prepare"><span>02</span><h3>Prepare</h3><p>Most of the men we help don’t have a basis of fatherhood in their lives—there wasn’t a dad to teach them. So we prepare the men to be a dad to their children through instruction and guest speakers sharing information from national fatherhood programs…and then measure what the men have gained from the classes.</p></article>
+          <article class="action-card reveal" id="help"><span>03</span><h3>Help</h3><p>When the men demonstrate a commitment to fatherhood and are free of any substance abuse, we help them connect and build their role as dads through legal assistance, job placement, social services coordination, and continuing mentoring.</p></article>
         </div>
       </div>
     </section>
@@ -187,7 +186,7 @@
     <div class="container footer__grid">
       <div class="footer__brand"><img src="assets/logos/official-dedicated-dads-we-help-dads-logo.png" alt="Dedicated Dads, a program of We Help Dads" /><p>Get Connected...Stay Connected</p></div>
       <nav class="footer__nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Our Programs</a><a href="donate.html">Donate</a><a href="contact.html">Contact</a></nav>
-      <div class="footer__contact"><a href="tel:+13176787507">317-678-7507</a><a href="mailto:Jeffreyhutter1@gmail.com">Jeffreyhutter1@gmail.com</a><a href="https://www.facebook.com/WeHelpDads/" target="_blank" rel="noopener noreferrer">Facebook</a></div>
+      <div class="footer__contact"><a href="tel:+13176787507">317-678-7507</a><a href="mailto:jhutter@wehelpdads.org">jhutter@wehelpdads.org</a><a href="https://www.facebook.com/WeHelpDads/" target="_blank" rel="noopener noreferrer">Facebook</a></div>
       <p class="footer__legal">&copy; <span id="year"></span> Dedicated Dads · We Help Dads. All rights reserved.</p>
       <p class="footer__credit">Website support by <a href="https://nocapsai.com" target="_blank" rel="noopener noreferrer">NoCapsAI</a></p>
     </div>

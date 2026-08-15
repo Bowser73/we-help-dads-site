@@ -1,28 +1,6 @@
 (function () {
   "use strict";
 
-  /* Jeff 8.8 branding update: use the original We Help Dads mark beside the
-     Dedicated Dads / We Help Dads mark and load the larger header sizing. */
-  var headerStyle = document.querySelector('link[href="header-logo-overrides.css"]');
-  if (!headerStyle) {
-    headerStyle = document.createElement("link");
-    headerStyle.rel = "stylesheet";
-    headerStyle.href = "header-logo-overrides.css?v=jeff-8-8";
-    document.head.appendChild(headerStyle);
-  }
-
-  var primaryHeaderLogo = document.querySelector(".nav__logo");
-  if (primaryHeaderLogo) {
-    primaryHeaderLogo.src = "assets/logos/we-help-dads-main-logo.png";
-    primaryHeaderLogo.alt = "We Help Dads";
-  }
-
-  var secondaryHeaderLogo = document.querySelector(".nav__logo-secondary");
-  if (secondaryHeaderLogo) {
-    secondaryHeaderLogo.src = "assets/logos/dedicated-dads-logo-transparent.png";
-    secondaryHeaderLogo.alt = "Dedicated Dads — We Help Dads — Get Connected, Stay Connected";
-  }
-
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 

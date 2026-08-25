@@ -645,3 +645,8 @@ h3{font-size:1.45rem} p{margin:0 0 1rem} a{color:inherit;text-decoration:none} i
 
 /* Classroom Training: preserve the complete original photograph framing. */
 .programs__photo-pair--stacked img{width:100%;height:auto!important;aspect-ratio:auto;object-fit:contain}
+
+/* Final Classroom Training photo layout: full frames, no filler, staggered below the copy. */
+.programs__photo-pair--stacked figure{height:auto!important;min-height:0}
+.programs__photo-pair--stacked img{width:100%;height:auto!important;min-height:0;object-fit:contain!important;background:transparent}
+@media (min-width:901px){.programs__photo-pair--stacked figure:nth-child(2){transform:translateX(-8rem);margin-top:2.75rem}}

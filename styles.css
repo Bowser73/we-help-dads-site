@@ -226,11 +226,17 @@ h3{font-size:1.45rem} p{margin:0 0 1rem} a{color:inherit;text-decoration:none} i
 .programs__photo-pair{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
 .programs__photo-pair--single{grid-template-columns:1fr}
 .programs__photo-pair--stagger{align-items:start}
-.programs__photo-pair--stacked{grid-template-columns:1fr;gap:0;align-items:start;overflow:visible}
-.programs__photo-pair--stacked figure:first-child{position:relative;width:90%;justify-self:end;box-shadow:0 16px 30px rgba(7,13,22,.14)}
-.programs__photo-pair--stacked figure:nth-child(2){position:relative;width:90%;justify-self:start;margin-top:2rem;box-shadow:0 18px 34px rgba(7,13,22,.18)}
-.programs__photo-pair--stacked img{height:auto;object-fit:contain}
-@media (max-width:720px){.programs__photo-pair--stacked{gap:1.25rem}.programs__photo-pair--stacked figure:first-child,.programs__photo-pair--stacked figure:nth-child(2){width:100%;margin-top:0}}
+/* Classroom Training page: photo 1 sits upper-right, photo 2 sits lower-left
+   directly under the paragraph column. Each photo is its own grid item (a
+   sibling of the text block) so CSS Grid's normal row flow keeps them from
+   ever overlapping the copy -- no transforms or magic offsets required. */
+.classroom-photo{margin:0}
+.classroom-photo figure{margin:0;overflow:hidden;border-radius:18px;background:transparent;box-shadow:0 16px 30px rgba(7,13,22,.14)}
+.classroom-photo img{width:100%;height:auto;object-fit:contain;display:block;background:transparent}
+.classroom-photo figcaption{padding:.45rem .7rem;font-size:.78rem;color:var(--muted);line-height:1.35}
+.classroom-photo--one{width:90%;justify-self:end}
+.classroom-photo--two{width:90%;justify-self:start}
+@media (max-width:900px){.classroom-photo--one,.classroom-photo--two{width:100%;justify-self:stretch}}
 .programs__photo--offset{margin-top:2.5rem}
 .programs__photo-pair figure{margin:0;overflow:hidden;border-radius:18px;background:var(--cream-deep)}
 .programs__photo-pair img{width:100%;height:185px;object-fit:cover;display:block}
@@ -643,10 +649,3 @@ h3{font-size:1.45rem} p{margin:0 0 1rem} a{color:inherit;text-decoration:none} i
 
 .contact__subheading{margin:-.4rem 0 1.1rem;font-size:1.15rem;font-weight:800;color:var(--forest-dark)}
 
-/* Classroom Training: preserve the complete original photograph framing. */
-.programs__photo-pair--stacked img{width:100%;height:auto!important;aspect-ratio:auto;object-fit:contain}
-
-/* Final Classroom Training photo layout: full frames, no filler, staggered below the copy. */
-.programs__photo-pair--stacked figure{height:auto!important;min-height:0}
-.programs__photo-pair--stacked img{width:100%;height:auto!important;min-height:0;object-fit:contain!important;background:transparent}
-@media (min-width:901px){.programs__photo-pair--stacked figure:nth-child(2){transform:translateX(-8rem);margin-top:2.75rem}}
